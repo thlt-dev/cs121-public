@@ -1,2 +1,2 @@
-# cs121.github.io
-CS121 GitHub Pages
+# cs121-github-pages
+CS121 GitHub Pages for assignment grading
