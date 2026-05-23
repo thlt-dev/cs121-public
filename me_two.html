@@ -1,0 +1,157 @@
+<html>
+<head>
+  <title>About Me</title>
+    <!--Differentiate H1 and H2 by size still -->
+    <!--Alternating example from class 1 examples-->
+    <!--Custom mappings defined for where a single type (div, output) have special subcases-->
+  <style type="text/css">
+        *{font-family: 'Montserrat', sans-serif;}
+        h1{
+            color: olivedrab;
+            font-size: 30;
+            margin-bottom: 30px;
+        }
+        h2{
+            color: olivedrab;
+            font-size: 24;
+            margin-bottom: 30px;
+        }
+        ol {
+            margin: 0 auto;
+            border: 2px solid #000000;
+            }
+        .div-food{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        .div-books-label{
+            display: inline-block;
+            text-align: right;
+            width: 100px;
+            height: 10;
+        }
+        .div-books-input{
+            display: inline-block;
+        }
+        .input-submit-guestbook{
+             margin-left: 100px;
+        }
+        tr:nth-child(odd) {background-color: rgb(156, 156, 83);}
+        
+	</style>
+</head>
+<body>
+  <h1>Tristan Tew</h1>
+  I spent roughly two weeks every summer in Door County, Wisconsin. It is an opportunity to take a break from work and relax by the lake. I go there with my entire family including grandparents, parents, and my partner.
+
+
+<h2> My top pet names are: </h2>
+  <ol>
+    <li>Quentin the cat</li>
+    <li>Dottie the dog</li>
+    <li>Smokey the dog</li>
+  </ol>
+
+<br>
+<h2> You will have to <a href="https://www.birddognyc.com/" target="_blank"> click here</a>  to find out my favorite restaurant </h2>
+<br>
+
+<h2> Can you guess what my favorite food is?</h2>
+<div class="div-food" style="background-image: url(images/spaghetti_squash.jpg)"></div>    
+<div class="div-food"> It is a spaghetti squash, which is quite versatile!</div>    
+
+<h2>Here are some book titles I'd recommend:</h2>
+
+<table>
+    <thead>
+        <th>Book Name</th>
+        <th>Cover Image</th>
+        <th>Author Name</th>
+        <th>Summary</th>
+    </thead>
+    <tr>
+        <td>Thinking Fast and Slow</td>
+        <td><img src="images/tfs.jpg" width="200" height="200" alt="cover for Thinking Fast and Slow"></td>
+        <td>Daniel Kahneman</td>
+        <td>Theory that has driven foundations of many behavioral economics research, detailing the biases and underlying drivers behind human action</td>
+    </tr>
+    <tr>
+        <td>Abundance</td>
+        <td><img src="images/abundance.jpg" width="200" height="200" alt="cover for Abundance"></td>
+        <td>Ezra Klein & Derek Thompson</td>
+        <td>Commentary on previous and future state of ambitous infrastructure projects in the United States</td>
+    </tr>
+    <tr>
+        <td>The Lego Story</td>
+        <td><img src="images/tls.jpg" width="200" height="200" alt="cover for The Lego Story"></td>
+        <td>Jens Anderson</td>
+        <td>The story of the Lego toy company from the early 1900's to today; they talk about a lot more than just the plastic bricks!</td>
+    </tr>
+    <tr>
+        <td>Chip War</td>
+        <td><img src="images/cw.jpg" width="200" height="200" alt="cover for Chip War"></td>
+        <td>Chris Miller</td>
+        <td>Commentary on the modern semiconductor industry and geopolitical implications; written by a Tufts professor!</td>
+    </tr>
+</table>
+
+<br>
+<h2> If you would like to, you may sign the guest book on the way out! </h2>
+<form>
+    <div class="div-books-label">
+        <label>
+            First Name: 
+        </label>
+    </div>
+    <div class="div-books-input">
+        <input name="firstName">
+    </div>
+    <br>
+
+    <div class="div-books-label">
+        <label>
+            Last Name: 
+        </label>
+    </div>
+    <div class="div-books-input">
+        <input name="lastName">
+    </div>
+    <br>
+
+    <div class="div-books-label">
+        <label>
+            Email: 
+        </label>
+    </div>
+    <div class="div-books-input">
+        <input name="emailAddress">
+    </div>
+    <br>
+
+    <div class="div-books-label">
+       <label name="state"> State: </label>
+    </div>
+    <div class="div-books-input">
+        <select name="stateSelect"> 
+        <option>MA</option>
+        <option>CT</option>
+        <option>NY</option>
+        <option>NH</option>
+        <option>VT</option>
+        <option>ME</option>
+        <option>RI</option>
+        <option>MN</option>
+    </select>
+    </div>
+    <br>
+   
+    <div class="div-submit-input">
+        <input class="input-submit-guestbook" type="submit" value="Sign Guest Book" name="signGuestBook">
+    </div>
+    
+</form>
+
+</body>
+</html>
