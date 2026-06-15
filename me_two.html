@@ -1,18 +1,21 @@
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <title>About Me</title>
     <!--Differentiate H1 and H2 by size still -->
     <!--Alternating example from class 1 examples-->
     <!--Custom mappings defined for where a single type (div, output) have special subcases-->
+    <!-- Added the 150 buffer so as not to conflict w/ the extra credit. Moved several inline 
+     styles to the main css block to follow the recommendations from lecture -->
   <style type="text/css">
         *{font-family: 'Montserrat', sans-serif;}
         h1{
-            color: olivedrab;
+            color: rgb(107, 142, 35);
             font-size: 30;
             margin-bottom: 30px;
         }
         h2{
-            color: olivedrab;
+            color: rgb(107, 142, 35);
             font-size: 24;
             margin-bottom: 30px;
         }
@@ -38,11 +41,34 @@
         .input-submit-guestbook{
              margin-left: 100px;
         }
+        .extra-credit-icon-div{
+            position: absolute;
+            top: 100px;
+            right: 35px;
+        }
+        .extra-credit-icon{
+            width: 75px;
+            height: 75px;
+            display: inline-block;
+        }
+        .books-table-image{
+            width: 200px;
+            height: 200px;
+        }
+        body{
+            margin-top: 150px;
+        }
         tr:nth-child(odd) {background-color: rgb(156, 156, 83);}
         
 	</style>
 </head>
 <body>
+    <!-- Must be fixed 100px, 35px from the top right corner, then store child assets in their own div -->
+  <div class="extra-credit-icon-div">
+    <img src="images/x.png" class="extra-credit-icon">
+    <img src="images/fb.png" class="extra-credit-icon">
+  </div>
+    
   <h1>Tristan Tew</h1>
   I spent roughly two weeks every summer in Door County, Wisconsin. It is an opportunity to take a break from work and relax by the lake. I go there with my entire family including grandparents, parents, and my partner.
 
@@ -73,25 +99,25 @@
     </thead>
     <tr>
         <td>Thinking Fast and Slow</td>
-        <td><img src="images/tfs.jpg" width="200" height="200" alt="cover for Thinking Fast and Slow"></td>
+        <td><img src="images/tfs.jpg" class="books-table-image" alt="cover for Thinking Fast and Slow"></td>
         <td>Daniel Kahneman</td>
         <td>Theory that has driven foundations of many behavioral economics research, detailing the biases and underlying drivers behind human action</td>
     </tr>
     <tr>
         <td>Abundance</td>
-        <td><img src="images/abundance.jpg" width="200" height="200" alt="cover for Abundance"></td>
+        <td><img src="images/abundance.jpg" class="books-table-image" alt="cover for Abundance"></td>
         <td>Ezra Klein & Derek Thompson</td>
         <td>Commentary on previous and future state of ambitous infrastructure projects in the United States</td>
     </tr>
     <tr>
         <td>The Lego Story</td>
-        <td><img src="images/tls.jpg" width="200" height="200" alt="cover for The Lego Story"></td>
+        <td><img src="images/tls.jpg" class="books-table-image" alt="cover for The Lego Story"></td>
         <td>Jens Anderson</td>
         <td>The story of the Lego toy company from the early 1900's to today; they talk about a lot more than just the plastic bricks!</td>
     </tr>
     <tr>
         <td>Chip War</td>
-        <td><img src="images/cw.jpg" width="200" height="200" alt="cover for Chip War"></td>
+        <td><img src="images/cw.jpg" class="books-table-image" alt="cover for Chip War"></td>
         <td>Chris Miller</td>
         <td>Commentary on the modern semiconductor industry and geopolitical implications; written by a Tufts professor!</td>
     </tr>
@@ -99,7 +125,8 @@
 
 <br>
 <h2> If you would like to, you may sign the guest book on the way out! </h2>
-<form>
+<!-- Use # since this isn't a live form, like we did in lecture -->
+<form action="#">
     <div class="div-books-label">
         <label>
             First Name: 
